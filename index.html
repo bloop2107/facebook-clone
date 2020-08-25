@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/style.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
     <title>Document</title>
 </head>
@@ -45,12 +46,13 @@
                         </li>
                         <li class="item"><a class="btn btn-add" href="#"><i class="fas fa-plus"></i></a></li>
                         <li class="item"><a class="btn btn-mess" href="#"><i class="fab fa-facebook-messenger"></i></a></li>
-                        <li class="item"><a class="btn btn-noti" href="#"><i class="fas fa-bell"></i></a></li>
-                        <li class="item"><a class="btn btn-sort" href="#"><i class="fas fa-sort-down"></i></a></li>
+                        <li onclick="notifimenu()"class="item"><a class="btn btn-noti" href="#"><i class="fas fa-bell"></i></a></li>
+                        <li onclick="settingmenu()" class="item"><a  class="btn btn-sort" href="#"><i id="down"  class="fas fa-caret-down"></i></a></li>
                     </ul>
                 </div>
+                
             </div>
-
+            
         </header>
         <!-- Header -->
         <!-- Main -->
@@ -246,6 +248,34 @@
                         </div>
                         
                     </div>
+                    <div class="meet-group">
+                        <div class="head-meet-group">
+                            <img src="icon/live.png" alt="">
+                            <div class="text-header">
+                                <p>Phòng họp mặt</p>
+                                <a href="#">Create</a>
+                            </div>
+                        </div>
+                        <div class="body-meet-group">
+                            <div class="meet-people">
+                                <div class="active">
+                                    <div class="overplay">
+                                        
+                                    </div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="image/users.jpg" alt="">
+                                <img src="image/users.jpg" alt="">
+                                <img src="image/users.jpg" alt="">
+                                <img src="image/users.jpg" alt="">
+                                <img src="image/users.jpg" alt="">
+                                <img src="image/users.jpg" alt="">
+                                <img src="image/users.jpg" alt="">
+                                <img src="image/users.jpg" alt="">
+                                <img src="image/users.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
                 <!-- Content -->
@@ -395,6 +425,160 @@
                     <span><i class="fas fa-plus-circle"></i></span>
                 </div>
             </div>  
+            <div id="setting-menu" class="dropdown-content">
+                <div class="profile">
+                    <a href="#" class="sub-profile">
+                        <img src="image/users.jpg" alt="">
+                        <div class="sum-profile">
+                            <div class="name">Bảo</div>
+                            <div class="see-profile">Xem trang cá nhân của bạn</div>
+                        </div>
+                    </a>
+                    <div class="hr-setting">
+
+                    </div>
+                    <a href="#" class="sub-profile2">
+                        <div class="icon">
+                            <i class="fas fa-comment-alt"></i>
+                        </div>
+                        <div class="sum-profile2">
+                            <div class="title">Đóng góp ý kiến</div>
+                            <div class="sub-title">Góp phần cải thiện phiên bản Facebook mới</div>
+                        </div>
+                    </a>
+                    <div class="hr-setting">
+
+                    </div>
+                    <a href="#" class="sub-profile3">
+                        <div class="icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <div class="sum-profile3">
+                            <div class="title">Cài đặt & quyền riêng tư</div>
+                            <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                    </a>
+                    <a href="#" class="sub-profile3">
+                        <div class="icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="sum-profile3">
+                            <div class="title">Trợ giúp & hỗ trợ</div>
+                            <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                    </a>
+                    <a href="#" class="sub-profile4">
+                        <div class="icon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <div class="sum-profile4">
+                            <div class="title">Chế độ tối</div>
+                            <div class="nightmare">
+                                <div class="circle">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="sub-profile2">
+                        <div class="icon">
+                            <i class="fas fa-arrow-circle-left"></i>
+                        </div>
+                        <div class="sum-profile2">
+                            <div class="title">Chuyển sang facebook thông thường</div>
+                            <div class="sub-title">Trải nghiệm sẽ ngừng vào tháng 9</div>
+                        </div>
+                    </a>
+                    <a href="#" class="sub-profile2">
+                        <div class="icon">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </div>
+                        <div class="sum-profile2">
+                            <div class="title">Đăng xuất</div>
+                            
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="notifi" class="dropdown-notifi">
+                <div class="title">
+                    <div class="text">Thông báo</div>
+                    <a href="#" class="btn-menu">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+                <div class="body">
+                    <div class="text">Mới nhất</div>
+                    
+                </div>
+                <a href="#" class="notifi-body">
+                    <img src="image/users.jpg" alt="">
+                    <div class="notifi-content">
+                        <b>Thái Bảo</b> đã đăng trong <b>J2TEAM</b> vào Chủ Nhật.
+                        <div class="time">
+                            11 hours ago
+                        </div>
+                        
+                    </div>
+                </a>
+                <div class="notifi-dot">
+                    
+                </div>
+                <a href="#" class="notifi-body">
+                    <img src="image/users.jpg" alt="">
+                    <div class="notifi-content">
+                        <b>Thái Bảo</b> đã đăng trong <b>J2TEAM</b> vào Chủ Nhật.
+                        <div class="time">
+                            11 hours ago
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="notifi-body">
+                    <img src="image/users.jpg" alt="">
+                    <div class="notifi-content">
+                        <b>Thái Bảo</b> đã đăng trong <b>J2TEAM</b> vào Chủ Nhật.
+                        <div class="time">
+                            11 hours ago
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="notifi-body">
+                    <img src="image/users.jpg" alt="">
+                    <div class="notifi-content">
+                        <b>Thái Bảo</b> đã đăng trong <b>J2TEAM</b> vào Chủ Nhật.
+                        <div class="time">
+                            11 hours ago
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="notifi-body">
+                    <img src="image/users.jpg" alt="">
+                    <div class="notifi-content">
+                        <b>Thái Bảo</b> đã đăng trong <b>J2TEAM</b> vào Chủ Nhật.
+                        <div class="time">
+                            11 hours ago
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="notifi-body">
+                    <img src="image/users.jpg" alt="">
+                    <div class="notifi-content">
+                        <b>Thái Bảo</b> đã đăng trong <b>J2TEAM</b> vào Chủ Nhật.
+                        <div class="time">
+                            11 hours ago
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="notifi-body">
+                    <img src="image/users.jpg" alt="">
+                    <div class="notifi-content">
+                        <b>Thái Bảo</b> đã đăng trong <b>J2TEAM</b> vào Chủ Nhật.
+                        <div class="time">
+                            11 hours ago
+                        </div>
+                    </div>
+                </a>
+            </div>
         </main>
         <!-- Main -->
     </div>
